@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackPwaManifest = require('webpack-pwa-manifest');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 const { InjectManifest } = require('workbox-webpack-plugin');
@@ -27,17 +28,13 @@ module.exports = () => {
         template: "./index.html"
       }),
       new MiniCssExtractPlugin(),
-
+      new CleanWebpackPlugin(),
     ],
     module: {
       rules: [
         {
           test: /\.html$/i,
           use: ["html-loader"],
-          // options: {
-          //   // Disables attributes processing
-          //   sources: false,
-          // },
         },
         {
           test: /\.css$/i,
@@ -59,8 +56,5 @@ module.exports = () => {
         },
       ],
     },
-
-
-
   };
 };
