@@ -17,15 +17,16 @@
   - [Credits](#credits)
   - [License](#license)
   - [How to Contribute](#contributions)
-  - [Tests](#tests)
+
   
   ## Installation
   
   This project can be used online at [https://mwp-just-another-text-editor.herokuapp.com/](https://mwp-just-another-text-editor.herokuapp.com/).  From that link, the user can also click the install button to download the application on their local computer.
-  
-  ## Usage
-  
-  
+  ### In browser:
+![screenshot](repo-assets/J-A-T-E.png)
+
+ ### Installed locally:
+![installed](repo-assets/installed.png)
   
   ## Credits
   
@@ -43,7 +44,7 @@
   
   Contributions to the project can be offered at the repository here: [https://github.com/mikewebprint/text-editor-pwa](https://github.com/mikewebprint/text-editor-pwa)
   
-  ## Tests
+
   
   
 

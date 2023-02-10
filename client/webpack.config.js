@@ -19,7 +19,7 @@ module.exports = () => {
       hot: "only",
     },
     output: {
-      filename: '[name].bundle.[contenthash].js',
+      filename: '[name].bundle.js',
       path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
